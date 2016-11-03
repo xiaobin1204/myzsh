@@ -50,7 +50,7 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump vagrant yii2 svn sudo composer node ubuntu )
+plugins=(git autojump vagrant sudo composer node nvm suse laravel5 )
 
 # User configuration
 
@@ -103,3 +103,6 @@ alias -s bz2='tar -xjvf'
 alias ngres='sudo service nginx reload'
 alias ngt='sudo nginx -t'
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
